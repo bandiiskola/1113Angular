@@ -1,1 +1,7 @@
-<p>lista works!</p>
+<h2>Repülés lista</h2>
+  <input [(ngModel)]="filter" placeholder="Repülőgép típus filter" class="bevitel"/>
+  <ul class="sor">
+    <li *ngFor="let repules of filtereltRepules()" (click)="reszletek(repules.id)" class="felsorolas">
+      {{ repules.id }} - {{ repules.departure }} to {{ repules.arrival }} - {{ repules.plane }}
+    </li>
+</ul>

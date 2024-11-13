@@ -1,0 +1,27 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.bevitel {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.sor {
+    list-style-type: none;
+    padding: 0;
+}
+.felsorolas {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.felsorolas:hover {
+    background-color: #f0f0f0;
+}

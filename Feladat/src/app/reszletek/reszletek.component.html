@@ -1,1 +1,9 @@
-<p>reszletek works!</p>
+<h2>Részletek</h2>
+    <div *ngIf="flight" class="osszefogo">
+      <p>ID: {{ flight.id }}</p>
+      <p>Indulás: {{ flight.departure }}</p>
+      <p>Érkezés: {{ flight.arrival }}</p>
+      <p>Érkezés idő: {{ flight.departureTime | date: 'short' }}</p>
+      <p>Repülő: {{ flight.plane }}</p>
+      <p>Ülések: {{ flight.seats }}</p>
+</div>

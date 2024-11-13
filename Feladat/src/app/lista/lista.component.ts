@@ -17,15 +17,7 @@ interface Repules {
   standalone: true,
   imports: [CommonModule, RouterModule, FormsModule],
   styleUrl: './lista.component.css',
-  template: `
-  <h2>Flight List</h2>
-  <input [(ngModel)]="filter" placeholder="Filter by Plane Type" />
-  <ul>
-    <li *ngFor="let flight of filtereltRepules()" (click)="reszletek(flight.id)">
-      {{ flight.id }} - {{ flight.departure }} to {{ flight.arrival }} - {{ flight.plane }}
-    </li>
-  </ul>
-`,
+  templateUrl: './lista.component.html'
 })
 export class ListaComponent {
   filter = '';
@@ -43,6 +35,6 @@ export class ListaComponent {
   constructor(private router: Router) {}
 
   reszletek(id: string) {
-    this.router.navigate(['/flight', id]);
+    this.router.navigate(['/repules', id]);
   }
 }

@@ -15,18 +15,8 @@ interface Repules {
   selector: 'app-reszletek',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  template: `
-    <h2>Flight Details</h2>
-    <div *ngIf="flight">
-      <p>ID: {{ flight.id }}</p>
-      <p>Departure: {{ flight.departure }}</p>
-      <p>Arrival: {{ flight.arrival }}</p>
-      <p>Departure Time: {{ flight.departureTime | date: 'short' }}</p>
-      <p>Plane: {{ flight.plane }}</p>
-      <p>Seats: {{ flight.seats }}</p>
-    </div>
-  `,
-  styleUrl: './reszletek.component.css'
+  templateUrl: './reszletek.component.html',
+  styleUrl: './reszletek.component.css',
 })
 export class ReszletekComponent {
   flight: Repules | undefined;
